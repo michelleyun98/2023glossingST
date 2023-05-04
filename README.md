@@ -44,7 +44,13 @@ The following languages are released as development languages. Additional surpri
 | Tsez    (bbo)  |  3,558      |  445      |    TBA     |         X             |           | X  (eng)      |
 | Uspanteko (usp)|  9,774      |  232      |    TBA     |         X             |    X      | X  (spa)      |
 
-Note that translations are not provided for Nyangbo and the translations for Uspanteko are in Spanish, not English.
+Surprise languages:
+
+| Language       | Train sents | Dev sents | Test sents | Morph. Segmentations? | POS tags? | Translations? |
+|----------------|-------------|-----------|------------|-----------------------|-----------|---------------|
+| Natugu (ntu)   | 791         | 99        |    TBA     |         X             |           | X (eng)       |
+
+Note, that translations are not provided for Nyangbo and the translations for Uspanteko are in Spanish, not English.
 
 ### Format
 
@@ -147,7 +153,7 @@ At the end of April, we will release the test input data in the following format
 \l "His wife and children live at Razhbadin's home", answered the old man.
 ```
 
-Participants use their glossing system to predict glosses for the tokens in the test data and submit their predictions to the shared task organizers (EMAIL address) in the following format:
+Participants use their glossing system to predict glosses for the tokens in the test data and submit their predictions to the shared task organizers (glossingsubmissions2023@gmail.com) in the following format:
 
 ```
 \t ʕAt’idä nesiq kinaw raqru łinałäy esin.
@@ -158,6 +164,12 @@ Participants use their glossing system to predict glosses for the tokens in the 
 \g Razhbadin-GEN2 home wife-and children-and be-QUOT answer give-PST.UNW old-DEF man-ERG
 \l "His wife and children live at Razhbadin's home", answered the old man.
 ```
+
+~~Please save your submission files as `<LAN>-test-track<K>-covered.sys`, where `<LAN>` is the language code and `<K>` is the track number, for example, `arp-test-track1-covered.sys`.~~
+
+Please save your submission files as `<LAN>-test-track<K>-covered.txt`, where `<LAN>` is the language code and `<K>` is the track number, for example, `arp-test-track1-covered.txt` (we changed the `.sys` suffix to `.txt` for the submission files because `.sys` can cause problems in Gmail).
+
+Please zip all of your submission files into an archive `<TEAM_NAME>_<N>.zip`, where `<TEAM_NAME>` is your team name and `<N>` is an index (1, 2, 3, ...) which is used to keep track of the submission number in case you want to make multiple submissions, for example, `StarfleetAcademyTeam_1.zip` and `StarfleetAcademyTeam_2.zip`.
 
 ## Baseline
 
@@ -183,15 +195,15 @@ Please also subscribe to the shared task newsgroup: https://groups.google.com/g/
 
 * Feb 13: Release of training and development data for development languages
 * March 6: Release of official evaluation script, baseline systems and baseline results
-* April 1: Release of surprise language training and development data
+* ~~April 1~~ April 8: Release of surprise language training and development data
 * April 24: Release of test data for all languages
-* April 24-26: Contestants run their systems on the test data
-* April 27: Test predictions should be submitted to organizers
-* May 1: Results are announced
-* May 15: System description paper submission deadline
-* May 15-25: Review
-* May 25: Notification of paper acceptance
-* May 30: Camera ready deadline for system description papers
+* ~~April 24-26~~ April 24-May 3: Contestants run their systems on the test data
+* ~~April 27~~ May 4: Test predictions should be submitted to organizers
+* ~~May 1~~ May 7: Results are announced
+* ~~May 15~~ May 22: System description paper submission deadline
+* ~~May 15-25~~ May 22-June 1: Review
+* ~~May 25~~ June 1: Notification of paper acceptance
+* ~~May 30~~ June 7: Camera ready deadline for system description papers
 
 ## Licensing
 
@@ -199,20 +211,20 @@ All baseline and evaluation code is released under the Apache 2.0 license. Each 
 
 ## References
 
-Baldridge, J., & Palmer, A. (2009, August). How well does active learning actually work? Time-based evaluation of cost-reduction strategies for language documentation. In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing (pp. 296-305).
+Baldridge, J., & Palmer, A. (2009, August). [How well does active learning actually work? Time-based evaluation of cost-reduction strategies for language documentation](https://aclanthology.org/D09-1031/). In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing (pp. 296-305).
 
-Barriga, D., Mijangos, V., & Gutierrez-Vasques, X. (2021). Automatic Interlinear Glossing for Otomi language. NAACL-HLT 2021, 34.
+Barriga, D., Mijangos, V., & Gutierrez-Vasques, X. (2021). [Automatic Interlinear Glossing for Otomi language](https://aclanthology.org/2021.americasnlp-1.5/). NAACL-HLT 2021, 34.
 
-Edwards, B., Larochelle, M., Mitchell, S., Van Eijk, J., Davis, H., Lyon, J. and Whitley, R.S. (2017). Sqwéqwel’s Nelh Skelkekla7lhk{\'a}lha Tales of Our Elders. University of British Columbia Occasional Papers in Linguistics
+Edwards, B., Larochelle, M., Mitchell, S., Van Eijk, J., Davis, H., Lyon, J. and Whitley, R.S. (2017). [Sqwéqwel’s Nelh Skelkekla7lhk{\'a}lha Tales of Our Elders](https://lingpapers.sites.olt.ubc.ca/pnwll-volumes/sqweqwels-nelh-skelkekla7lhkalha-tales-of-our-elders/). University of British Columbia Occasional Papers in Linguistics
 
-Lewis, W. D., & Xia, F. (2010). Developing ODIN: A multilingual repository of annotated language data for hundreds of the world's languages. Literary and Linguistic Computing, 25(3), 303-319.
+Lewis, W. D., & Xia, F. (2010). [Developing ODIN: A multilingual repository of annotated language data for hundreds of the world's languages](https://academic.oup.com/dsh/article-abstract/25/3/303/971097?redirectedFrom=fulltext). Literary and Linguistic Computing, 25(3), 303-319.
 
-McMillan-Major, A. (2020). Automating gloss generation in interlinear glossed text. Proceedings of the Society for Computation in Linguistics, 3(1), 338-349.
+McMillan-Major, A. (2020). [Automating gloss generation in interlinear glossed text](https://aclanthology.org/2020.scil-1.42/). Proceedings of the Society for Computation in Linguistics, 3(1), 338-349.
 
-Moeller, S., & Hulden, M. (2018, August). Automatic glossing in a low-resource setting for language documentation. In Proceedings of the Workshop on Computational Modeling of Polysynthetic Languages (pp. 84-93).
+Moeller, S., & Hulden, M. (2018, August). [Automatic glossing in a low-resource setting for language documentation](https://aclanthology.org/W18-4809/). In Proceedings of the Workshop on Computational Modeling of Polysynthetic Languages (pp. 84-93).
 
-Palmer, A., Moon, T., & Baldridge, J. (2009, June). Evaluating automation strategies in language documentation. In Proceedings of the NAACL HLT 2009 Workshop on Active Learning for Natural Language Processing (pp. 36-44).
+Palmer, A., Moon, T., & Baldridge, J. (2009, June). [Evaluating automation strategies in language documentation](https://aclanthology.org/W09-1905/). In Proceedings of the NAACL HLT 2009 Workshop on Active Learning for Natural Language Processing (pp. 36-44).
 
-Zhao, X., Ozaki, S., Anastasopoulos, A., Neubig, G., & Levin, L. (2020, December). Automatic interlinear glossing for under-resourced languages leveraging translations. In Proceedings of the 28th International Conference on Computational Linguistics (pp. 5397-5408).
+Zhao, X., Ozaki, S., Anastasopoulos, A., Neubig, G., & Levin, L. (2020, December). [Automatic interlinear glossing for under-resourced languages leveraging translations](https://aclanthology.org/2020.coling-main.471/). In Proceedings of the 28th International Conference on Computational Linguistics (pp. 5397-5408).
 
-Samardžić, T., Schikowski, R., & Stoll, S. (2015). Automatic interlinear glossing as two-level sequence classification.
+Samardžić, T., Schikowski, R., & Stoll, S. (2015). [Automatic interlinear glossing as two-level sequence classification](https://aclanthology.org/W15-3710/).
