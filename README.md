@@ -139,6 +139,10 @@ We additionally provide system input files (e.g. `data/ddo-dev-track2-covered`),
 
 The main evaluation metric for the competition is token accuracy. Systems are evaluated w.r.t. generation of fully glossed tokens (*chiens -> dog-PL*). We will also separately evaluate glossing accuracy on bound morphemes like *PL* and free morphemes, i.e. stems, like *dog*.
 
+## Results
+
+The results have been published [here](https://github.com/sigmorphon/2023glossingST/blob/main/results.md)
+
 ## Submission
 
 At the end of April, we will release the test input data in the following format (for track 1 in the example):
@@ -175,6 +179,14 @@ Please zip all of your submission files into an archive `<TEAM_NAME>_<N>.zip`, w
 
 In early March, we will release baseline systems and results for both tracks. For the closed track (track 1), we will provide a transformer-based neural baseline system. For the open track (track 2), we will provide CRF-based and neural transformer baseline systems.  
 
+## System Description Paper
+
+Please prepare a 4-8 page paper (excluding references and appendices) describing your shared task submission. Please prepare your submission using the ACL 2023 Latex or Microsoft templates which can be found [here](https://2023.aclweb.org/calls/style_and_formatting/). In addition to the official shared task results for your system, you are welcome to include additional experimental results in the paper. We also encourage error analysis and ablation studies which can increase the value of your contribution. 
+
+Submissions will be thoroughly reviewed. Note that there is no requirement for anonymity. We aim to accept all submissions and may provide coaching for writing of the final camera-ready submission if needed. 
+
+Please submit your description papers to [Softconf](https://softconf.com/acl2023/sigmorphon/) by May 22, 2023, AoE.  
+
 ## Organizers
 
 * Michael Ginn (University of Colorado)
@@ -199,7 +211,7 @@ Please also subscribe to the shared task newsgroup: https://groups.google.com/g/
 * April 24: Release of test data for all languages
 * ~~April 24-26~~ April 24-May 3: Contestants run their systems on the test data
 * ~~April 27~~ May 4: Test predictions should be submitted to organizers
-* ~~May 1~~ May 7: Results are announced
+* ~~May 1 May 7~~ May 8: Results are announced (Baseline results will be available on May 9)
 * ~~May 15~~ May 22: System description paper submission deadline
 * ~~May 15-25~~ May 22-June 1: Review
 * ~~May 25~~ June 1: Notification of paper acceptance
